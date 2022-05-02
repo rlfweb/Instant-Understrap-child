@@ -15602,6 +15602,16 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+article.card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all ease 1s;
+}
+article.card.visible {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 body.home article,
 body.archive article {
   margin-bottom: 5rem;

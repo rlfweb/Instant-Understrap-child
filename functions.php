@@ -40,6 +40,10 @@ function theme_enqueue_styles() {
 	wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . $theme_styles, array(), $the_theme->get( 'Version' ) );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . $theme_scripts, array(), $the_theme->get( 'Version' ), true );
+	
+	// RLF - enqueue scroll magic - false at the end meaning it won't get loaded into footer, instead into header
+	wp_enqueue_script( 'scroll-magic', get_stylesheet_directory_uri() . '/src/js/ScrollMagic.min.js', array(), $the_theme->get( 'Version' ), false );
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -15643,6 +15643,10 @@ body.archive article .woocommerce-info a.button,
   background-color: #5533ff;
   margin-bottom: 0;
 }
+body.page-template-page-landing {
+  color: red;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

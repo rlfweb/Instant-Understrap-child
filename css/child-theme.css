@@ -15601,6 +15601,37 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+body.home article,
+body.archive article {
+  margin-bottom: 5rem;
+}
+body.home article .entry-meta,
+body.archive article .entry-meta {
+  font-size: 0.8rem;
+}
+body.home article .btn, body.home article .wpcf7 input[type=submit], .wpcf7 body.home article input[type=submit], body.home article .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message body.home article a.button, body.home article .woocommerce-info a.button, .woocommerce-info body.home article a.button,
+body.archive article .btn,
+body.archive article .wpcf7 input[type=submit],
+.wpcf7 body.archive article input[type=submit],
+body.archive article .woocommerce-notices-wrapper .woocommerce-message a.button,
+.woocommerce-notices-wrapper .woocommerce-message body.archive article a.button,
+body.archive article .woocommerce-info a.button,
+.woocommerce-info body.archive article a.button {
+  display: block;
+}
+@media (min-width: 768px) {
+  body.home article .btn, body.home article .wpcf7 input[type=submit], .wpcf7 body.home article input[type=submit], body.home article .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message body.home article a.button, body.home article .woocommerce-info a.button, .woocommerce-info body.home article a.button,
+body.archive article .btn,
+body.archive article .wpcf7 input[type=submit],
+.wpcf7 body.archive article input[type=submit],
+body.archive article .woocommerce-notices-wrapper .woocommerce-message a.button,
+.woocommerce-notices-wrapper .woocommerce-message body.archive article a.button,
+body.archive article .woocommerce-info a.button,
+.woocommerce-info body.archive article a.button {
+    display: inline-block;
+  }
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;

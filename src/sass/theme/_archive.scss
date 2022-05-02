@@ -1,0 +1,22 @@
+// RLF - custom styles for Archive pages
+
+// Scope css so it only shows up on the pages you want it to -nested targeting
+body.home, 
+body.archive {
+    article {
+        margin-bottom: $spacer * 5;
+
+        .entry-meta {
+            font-size: 0.8rem;
+        } 
+// using bootstrap variables like media-breakpoint-up so that everything is consistent throughout the site
+        .btn {
+            display: block;
+            @include media-breakpoint-up(md){
+                display: inline-block;
+            }
+        }
+       
+    }
+}
+

@@ -89,5 +89,23 @@ function understrap_child_customize_controls_js() {
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
 
-// Disables the block editor from managing widgets.
+// RLF - Disables the block editor from managing widgets.
 // add_filter( 'use_widgets_block_editor', '__return_false' );
+
+
+// RLF - Custom Post Types
+function accents_custom_post_type() {
+    register_post_type('accents',
+        array(
+            'labels'      => array(
+                'name'          => __('Accents', 'textdomain'),
+                'singular_name' => __('Accent', 'textdomain'),
+            ),
+                'public'      => true,
+                'has_archive' => true,
+				'rewrite'     => array( 'slug' => 'accents' ),
+				'taxonomies'  => array( 'category' ),
+        )
+    );
+}
+add_action('init', 'accents_custom_post_type');

@@ -87,3 +87,7 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+
+// Disables the block editor from managing widgets.
+// add_filter( 'use_widgets_block_editor', '__return_false' );

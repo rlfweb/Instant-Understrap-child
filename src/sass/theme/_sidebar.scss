@@ -1,0 +1,21 @@
+.widget {
+    margin-bottom: $spacer * 3;
+
+    // take any class that is used in a bootstrap component, and extend that class to any other element 
+    // widget titles are usually h2. here they are given the styles of an h5 
+    .wp-block-group__inner-container h2 {
+        @extend .h5;
+        text-transform: uppercase;
+        display: block;
+        color: $white;
+        background-color: $primary;
+        margin-bottom: 0;
+    }
+// applies the bootstrap list-group-item class to the .list-group items
+    ul {
+        @extend .list-group;
+        li {
+            @extend .list-group-item;
+        }
+    }
+}

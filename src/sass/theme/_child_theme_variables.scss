@@ -9,3 +9,5 @@ $primary: $purple;  // Once we've changed the value, we'll also make it the prim
 // RLF - FONTS
 $font-family-base: 'Lato', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
+// overrides default border radius of 0.25, globally across the site
+$border-radius: 0;

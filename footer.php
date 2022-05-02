@@ -69,6 +69,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+<!-- a pop up modal about Cookies that appears 3 secs after homepage loads -->
+<?php if ( is_front_page() ) : ?>
+<div id="ctaModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cookies</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>We use cookies to offer you a better browsing experience, analyze site traffic and personalize content. Read about how we use cookies and how you can control them in our Cookie Policy. If you continue to use this site, you consent to our use of cookies.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Got it</button>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
+
 <?php wp_footer(); ?>
 
 </body>

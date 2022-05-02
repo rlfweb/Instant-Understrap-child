@@ -31,6 +31,33 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
+
+<!-- RLF adding extra navbar with search (needs hooking up to wordpress search)-->
+<nav class="navbar navbar-expand navbar-dark bg-secondary">
+	<div class="container">
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location'  => 'primary',
+				'container_class' => 'd-block ml-auto',
+				'container_id'    => '',
+				'menu_class'      => 'navbar-nav ml-auto',
+				'fallback_cb'     => '',
+				'menu_id'         => 'main-menu',
+				'depth'           => 2,
+				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+			)
+		);
+		?>
+
+	<form class="d-flex my-2 my-lg-0">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary btn-sm my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+	</div>
+</nav>
+
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
 	</header><!-- #wrapper-navbar end -->

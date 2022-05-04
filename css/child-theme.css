@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@font-face {
+  font-family: "Uni-Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Uni-Sans.ttf") format("truetype");
+}
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

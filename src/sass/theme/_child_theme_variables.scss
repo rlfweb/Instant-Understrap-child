@@ -11,3 +11,33 @@ $font-family-base: 'Lato', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
 // overrides default border radius of 0.25, globally across the site
 $border-radius: 0;
+
+// RLF - @font-face font
+// $font-family-base: 'Uni-Sans', sans-serif; for a font you've used @font-face for
+
+
+
+
+// RLF - if you want to change breakpoints or add extra ones for i.e. mdlg or xxl screens
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   mdlg: 840px,
+//   lg: 992px,
+//   xl: 1400px,
+//   xxl: 1800px
+// ) !default;
+
+
+// RLF - and i.e. change the container widths too
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   mdlg: 780px,
+//   lg: 960px,
+//   xl: 1340px,
+//   xxl: 1620px
+// ) !default;

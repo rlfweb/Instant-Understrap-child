@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
+// or copy font files into /fonts and use @font-face like this and add to child_theme_variables.css 
+@font-face {
+    font-family: 'Uni-Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Uni-Sans.ttf') format('truetype');
+}
+
 @import "theme/child_theme_variables";                   // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
 @import "assets/bootstrap5/bootstrap";                             // <------- Loads Bootstrap4
 @import "assets/understrap/theme/understrap";  // <------- Loads the Understrap defaults. Just a few classes to incorporate BS in WP
